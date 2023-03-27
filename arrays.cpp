@@ -164,3 +164,132 @@
 //     }cout << -1 ; 
 //     return 0 ; 
 // }
+
+// find the no of arrays whose sum is equal to the given number 
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int count =0;
+//     int ar[]={3,4,6,7,1};
+//     int target_sum; cin >> target_sum ; 
+//     for (int i = 0 ; i<(sizeof(ar)/sizeof(ar[0]))-1;i++){ //other method *(&arr+1)-arr;
+//         for (int j = i+1;j<5;j++){
+//             if (ar[i]+ar[j]==target_sum){
+//                 count ++; 
+//             }
+//         }
+//     }cout<<count; 
+//     return 0 ; 
+// }
+
+//find the triplets whose sum equal to the given value 
+// #include <iostream>
+// using namespace std ;
+// int main(){
+//     int target_sum=0; 
+//     int n ; cin>>n; 
+//     int arr[]= {3,1,2,4,0,6};
+//     for (int i = 0 ; i<5 ;i++){
+//         for (int j = i+1;j<5 ;j++){
+//             for (int k = j+1;j<5;j++){
+//                 if (arr[i]+arr[j]+arr[k]==n){
+//                     target_sum ++; 
+//                 }
+//             }
+//         }
+//     }
+//     cout<<target_sum ;
+//     return 0  ; 
+// }
+
+//Find the unique number in a given array where all the elements are being repeated twice with one value being unique ; 
+// #include <iostream>
+// using namespace std; 
+// int main(){
+//     int arr[]={2,3,1,3,2,4,1}; 
+//     for (int i = 0 ; i<7; i++){
+//         for (int j = i+1 ; j<7; j++){
+//             if (arr[i]==arr[j]){
+//                 arr[i]=arr[j]= -1;
+//             }
+//         }
+//     }
+//     for(int i = 0 ;i<7;i++){
+//         if (arr[i]>0){
+//             cout<< arr[i];
+//         }
+//     }
+//     return 0 ; 
+// }
+
+//Find the second largest element in a given array ; 
+
+// #include <iostream>
+// using namespace std ;
+// int largest_element_index (int arr[] ,int ); 
+// int main(){
+//     int arr[]={2,3,5,7,6,1};
+//     int index = largest_element_index(arr,6);
+//     //arr[index]= -1;  //when duplicates are present need to manipulate the code 
+//     int largest_element = arr[index];
+
+//     index = largest_element_index(arr,6);
+//     cout << arr[index];
+//     return 0 ; 
+// }
+// int largest_element_index(int arr[],int a ){
+//     int index = 0; 
+//     int max =INT16_MIN;
+//     for(int i = 0; i<a; i++){
+//         if (arr[i]>max){
+//             max=arr[i]; 
+//             index =i ; 
+//         }
+//     }
+//     return index ;
+// }
+
+// Rotate the given array a by k steps where k is a non negative. Note  k can be greater than n as well where n is the size of array a ; 
+
+// #include <iostream>
+// using namespace std ;
+// int main(){
+//     int array[]={1,2,3,4,5};
+//     int k ,temp; cin>>k ; 
+//     for (int i =0 ; i<k;i++){
+//         for (int j = 5 ; j>0 ;j--){
+//             if (j==5){
+//                 temp=array[j-1];
+//             }
+//             array[j]=array[j-1];
+//         }array[0]=temp;
+//     }
+//     for (int k= 0 ;k<*(&array+1)-array;k++){
+//         cout<<array[k]<<" ";
+//     }
+//     return 0 ; 
+// }
+//Another approach -->>>
+// make another array and insert elements into#include <iostream >
+// using namespace std ;
+// divide k by the size of the elements and then run loop from the adding those element 
+// than another loop for adding remaining element ; 
+
+ //also possible by vector reverse (v.begin(),v.end())--see the pattern
+ //need to include algorithms header file . 
+//  #include <iostream>
+//  #include <vector>
+//  #include <algorithm>
+//  using namespace std ;
+//  int main(){
+//     vector <int> v= {1,2,3,4,5}; 
+//     int k ; cin>>k ;
+//     k=k%v.size ();
+//     reverse (v.begin(),v.end());
+//     reverse (v.begin(),v.begin()+k);
+//     reverse (v.begin()+k,v.end());
+//     for (int a : v ){
+//         cout<< a <<" "; 
+//     }
+//     return 0 ; 
+//  }
