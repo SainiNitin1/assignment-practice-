@@ -293,3 +293,32 @@
 //     }
 //     return 0 ; 
 //  }
+
+//Given Q  queries ,check if the given nubmer is present int the array or not 
+//Note : Value of all the elements in the array is less than 10 to the power 5 ;
+//can use normal iteration but when array size is very large it will take a lot of time 
+#include <bits/stdc++.h>
+using namespace std ;
+int main(){
+    int n ; cin >>n ; 
+    vector<int > v;
+    for (int i =0 ; i<n ;i++){
+        int elem ;
+        cin>>elem; 
+        v.push_back(elem); 
+    }
+    const int a = 1e5;
+    vector <int > checker(a,0 );//initialises a vector with all elements 0 and of given length ; 
+    
+    for (int j = 0 ; j<n ; j++){
+        checker[v[j]]++;
+    }
+    int query ; cin >>query ; 
+    while (query--){// when it is 0 the loops stops ; because 0 is == false and 1 is true ; 
+        int search ; cin >> search ; 
+        cout << "no of times "<<search <<" is present "<<checker[search]<<endl ; 
+
+    } 
+
+    return 0 ;
+}
