@@ -1,4 +1,4 @@
-//  programme to print the sum of all even and odd terms in an array 
+//  programme to print the count of all even and odd terms in an array 
 // #include <iostream>
 // using namespace std ; 
 
@@ -395,3 +395,61 @@
 //         }
 //     }   
 // }
+
+// given an array of a in non -decreasing order ,return an array of the sequence of each number sorted in non-decreasing order 
+
+#include <iostream>
+#include <cstdlib>
+#include <vector>
+#include <algorithm >
+using namespace std ;
+void result (vector <int > &a ){
+    vector <int > vec; 
+    int i = 0 ,j = a.size()-1 ; 
+    while (i<=j ){
+        if(abs(a[i])<abs(a[j])){
+            vec.push_back(abs(a[j])*abs(a[j])); 
+            j--; 
+        }
+        else{
+            vec.push_back(abs(a[i])*abs(a[i]));
+            i++;
+        }
+    }
+    reverse(vec.begin (),vec.end()); 
+    for(int h = 0 ; h<vec.size() ;h++){
+        cout<< vec[h]<<" ";
+    }cout<<endl ; 
+}
+int main(){
+    int n ; cin >> n ;
+    vector <int> v; 
+    for (int i = 0 ;i<n ;i++){
+        int elem ; cin>> elem ; 
+        v.push_back(elem); 
+    }
+    result(v); 
+    return 0 ; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
