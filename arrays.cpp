@@ -297,28 +297,101 @@
 //Given Q  queries ,check if the given nubmer is present int the array or not 
 //Note : Value of all the elements in the array is less than 10 to the power 5 ;
 //can use normal iteration but when array size is very large it will take a lot of time 
-#include <bits/stdc++.h>
-using namespace std ;
-int main(){
-    int n ; cin >>n ; 
-    vector<int > v;
-    for (int i =0 ; i<n ;i++){
-        int elem ;
-        cin>>elem; 
-        v.push_back(elem); 
-    }
-    const int a = 1e5;
-    vector <int > checker(a,0 );//initialises a vector with all elements 0 and of given length ; 
+
+// #include <bits/stdc++.h>
+// using namespace std ;
+// int main(){
+//     int n ; cin >>n ; 
+//     vector<int > v;
+//     for (int i =0 ; i<n ;i++){
+//         int elem ;
+//         cin>>elem; 
+//         v.push_back(elem); 
+//     }
+//     const int a = 1e5;
+//     vector <int > checker(a,0 );//initialises a vector with all elements 0 and of given length ; 
     
-    for (int j = 0 ; j<n ; j++){
-        checker[v[j]]++;
-    }
-    int query ; cin >>query ; 
-    while (query--){// when it is 0 the loops stops ; because 0 is == false and 1 is true ; 
-        int search ; cin >> search ; 
-        cout << "no of times "<<search <<" is present "<<checker[search]<<endl ; 
+//     for (int j = 0 ; j<n ; j++){
+//         checker[v[j]]++;
+//     }
+//     int query ; cin >>query ; 
+//     while (query--){// when it is 0 the loops stops ; because 0 is == false and 1 is true ; 
+//         int search ; cin >> search ; 
+//         cout << "no of times "<<search <<" is present "<<checker[search]<<endl ; 
 
-    } 
+//     } 
 
-    return 0 ;
-}
+//     return 0 ;
+// >>>>>>>>>>>>>need to derefernce the pointer variable declared ;
+
+
+//Q- sort an array consisting of only 0 and 1 such that all zeroes are on the left side and all 1 are in the right side  ;
+
+// #include <iostream>
+// #include <vector >
+// using namespace std ;
+// void sort01(vector<int> &v ){
+//     int zeroes; 
+//     for (int z:v){
+//         if (z==0 ){
+//             zeroes ++ ; 
+//         }
+//     }
+//      for (int i = 0 ; i<v.size() ; i++){
+//         if (i<zeroes){
+//             v[i]=0 ;
+//         }else {
+//             v[i]=1; 
+//         } 
+//     }   
+// }
+// int main(){
+//     int a; cin >>a; 
+//     vector <int > v ; 
+//     for (int i = 0  ; i< a; i++){
+//         int elem ; cin>>elem ; 
+//         v.push_back (elem);
+//     }
+//     sort01(v);
+//     for (int i = 0 ; i<v.size();i++){
+//         cout<< v[i]<<" "; 
+//     }
+//     return 0 ;
+// }
+/////////TWO POINTER CONCEPT FOR ABOVE PROBLEM ////////////
+
+// #include <iostream>
+// #include <vector>
+// using namespace std ;
+// void swap01(vector<int>&a);
+// int main(){
+//     int a ; cin>>a; 
+//     vector <int > v  ;
+    
+//     for (int i =0 ;i<a;i++){
+//         int elem; cin>>elem ;
+//         v.push_back(elem) ;
+//     }
+//     swap01(v);
+//     for(int j =0 ;j<v.size ();j++){
+//         cout<< v[j]; 
+//     }
+//     return 0 ;
+// }
+// void swap01(vector<int> &b){
+//     int pointer1  = 0 ; 
+//     int pointer2  =  b.size()-1;
+//     for(;pointer1<pointer2 ;){
+//         if (b[pointer1]==1 &&b[pointer2 ]==0){
+//             b[pointer1]=0 ;b[pointer2 ]= 1; 
+//             pointer1++; 
+//             pointer2--; 
+//         }
+//         else if (b[pointer1]==0 ){
+//             pointer1++; 
+//         }
+//         else if (b[pointer2]==1){
+//             pointer2--; 
+//         }
+//     }   
+// }
