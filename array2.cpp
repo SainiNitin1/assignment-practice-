@@ -56,18 +56,18 @@
 // }
 
 
-//Q-Given an array of integer of size n .Answer q queries where you need to print the sum of values in a given 
+// Q-Given an array of integer of size n .Answer q queries where you need to print the sum of values in a given 
 // range of indices from l ot r (both included )
 // note-values in land r follows 1 based indexing 
 
 
 // #include <iostream>
-// using namespace std; 
+// using namespace std;  
 // int main(){
 //     int n ; cin>>n ;
 //     int arr[n]; 
 //     for(int i= 1 ;i<=n ;i++){
-//         cin>>arr[i];     --->>can also be solved by calcutlating total sum and then substracting it .
+//         cin>>arr[i];                //--->>can also be solved by calcutlating total sum and then substracting it .
 //     }
 //     int q; cin>>q ; 
 //     while (q--){
@@ -78,4 +78,30 @@
 //         }cout << sum; 
 //     }
 //     return 0 ;
+// }
+
+// - ​There is a man going on a trek. The trek consists of n + 1 points at different altitudes. The
+// man starts his trek on point 0 with altitude equal 0. You are given an integer array height
+// of length n where height[i] is the net height in altitude between points i​ and i + 1 for all
+// (0 <= i < n). Return the highest altitude of a point.
+
+// #include<iostream>
+// #include<algorithm>
+// using namespace std ;
+// int maxheight (int arr[],int  ); 
+// int main(){
+//     int n; cin>>n ;
+//     int arr [n ]; 
+//     for (int i = 0 ; i<n ; i++){
+//         cin>>arr[i]; 
+//     }
+//     int max = maxheight(arr,n);
+//     if (max>0){
+//         cout <<max ; 
+//     }else cout << 0 ;
+//     return 0 ; 
+// }
+
+// int maxheight (int arr[],int size ){
+//     return *max_element(arr,arr+size); 
 // }
