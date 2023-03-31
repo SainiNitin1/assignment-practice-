@@ -85,23 +85,19 @@
 // of length n where height[i] is the net height in altitude between points i​ and i + 1 for all
 // (0 <= i < n). Return the highest altitude of a point.
 
-// #include<iostream>
-// #include<algorithm>
-// using namespace std ;
-// int maxheight (int arr[],int  ); 
-// int main(){
-//     int n; cin>>n ;
-//     int arr [n ]; 
-//     for (int i = 0 ; i<n ; i++){
-//         cin>>arr[i]; 
-//     }
-//     int max = maxheight(arr,n);
-//     if (max>0){
-//         cout <<max ; 
-//     }else cout << 0 ;
-//     return 0 ; 
-// }
+#include<iostream>
+#include<algorithm>
+using namespace std ;
+int maxheight (int arr[],int  ); 
+int main(){
+    int n; cin>>n ;
+    int arr [n ]; 
+    for (int i = 0 ; i<n ; i++){
+        cin>>arr[i]; 
+    }
+    cout << maxheight(arr,n );
+}
 
-// int maxheight (int arr[],int size ){
-//     return *max_element(arr,arr+size); 
-// }
+int maxheight (int arr[],int size ){
+    return *max_element(arr,arr+size); 
+}
