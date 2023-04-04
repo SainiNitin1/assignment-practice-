@@ -1,4 +1,4 @@
-//  programme to print the count of all even and odd terms in an array 
+// Q-programme to print the count of all even and odd terms in an array 
 // #include <iostream>
 // using namespace std ; 
 
@@ -21,7 +21,7 @@
 //     return 0 ; 
 // }
 
-// Given an array containing n distinct integers in the range [0,n] (inclusive of both 0 and n) (inclusive of both
+//Q-Given an array containing n distinct integers in the range [0,n] (inclusive of both 0 and n) (inclusive of both
 // 0 and n). Find and return the only number of the range that is not present in the array. Here 1<n<101.
 
 // #include <iostream>
@@ -50,7 +50,7 @@
 // }
 
 
-// Given an array containing n distinct integers in the range [0,n] (inclusive of both 0 and n) (inclusive of both
+// Q-Given an array containing n distinct integers in the range [0,n] (inclusive of both 0 and n) (inclusive of both
 // 0 and n). Find and return the only number of the range that is not present in the array. Here 1<n<101.
 
 // #include <iostream>
@@ -72,7 +72,7 @@
 //     return 0 ; 
 // }
 
-// Given an array containing n distinct integers in the range [0,n] (inclusive of both 0 and n) (inclusive of both
+// Q-Given an array containing n distinct integers in the range [0,n] (inclusive of both 0 and n) (inclusive of both
 // 0 and n). Find and return the only number of the range that is not present in the array. Here 1<n<101.
 
 // #include <iostream>
@@ -108,7 +108,7 @@
 //     return 0 ; 
 // }
 
-// Given an integer array and its size, reverse the array and print it . Here 1<size<101
+// Q-Given an integer array and its size, reverse the array and print it . Here 1<size<101
 
 // #include <iostream>
 // using namespace std; 
@@ -137,7 +137,7 @@
 //     return 0 ; 
 // }
  
- //  Given an integer array containing n elements. Find the element in the array for which all the elements
+ // Q-Given an integer array containing n elements. Find the element in the array for which all the elements
 // to its left are smaller than it and all the elements to the right of it are larger than it. Here 1<n<101.
 // #include <iostream>
 // using namespace std; 
@@ -165,7 +165,7 @@
 //     return 0 ; 
 // }
 
-// find the no of arrays whose sum is equal to the given number 
+// Q-find the no of arrays whose sum is equal to the given number 
 // #include <iostream>
 // using namespace std;
 // int main(){
@@ -182,7 +182,7 @@
 //     return 0 ; 
 // }
 
-//find the triplets whose sum equal to the given value 
+//Q-find the triplets whose sum equal to the given value 
 // #include <iostream>
 // using namespace std ;
 // int main(){
@@ -202,7 +202,7 @@
 //     return 0  ; 
 // }
 
-//Find the unique number in a given array where all the elements are being repeated twice with one value being unique ; 
+//Q-Find the unique number in a given array where all the elements are being repeated twice with one value being unique ; 
 // #include <iostream>
 // using namespace std; 
 // int main(){
@@ -222,7 +222,7 @@
 //     return 0 ; 
 // }
 
-//Find the second largest element in a given array ; 
+//Q-Find the second largest element in a given array ; 
 
 // #include <iostream>
 // using namespace std ;
@@ -249,7 +249,7 @@
 //     return index ;
 // }
 
-// Rotate the given array a by k steps where k is a non negative. Note  k can be greater than n as well where n is the size of array a ; 
+// Q-Rotate the given array a by k steps where k is a non negative. Note  k can be greater than n as well where n is the size of array a ; 
 
 // #include <iostream>
 // using namespace std ;
@@ -294,7 +294,7 @@
 //     return 0 ; 
 //  }
 
-//Given Q  queries ,check if the given nubmer is present int the array or not 
+//Q-Given Q  queries ,check if the given nubmer is present int the array or not 
 //Note : Value of all the elements in the array is less than 10 to the power 5 ;
 //can use normal iteration but when array size is very large it will take a lot of time 
 
@@ -396,7 +396,7 @@
 //     }   
 // }
 
-// given an array of a in non -decreasing order ,return an array of the sequence of each number sorted in non-decreasing order 
+//Q-given an array of a in non -decreasing order ,return an array of the sequence of each number sorted in non-decreasing order 
 
 #include <iostream>
 #include <cstdlib>
