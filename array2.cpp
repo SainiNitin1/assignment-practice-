@@ -102,5 +102,4 @@
 //     return *max_element(arr,arr+size); 
 // }
 
-// Q- Given an integer array arr consisting of 0s and 1s only return the max length of sequence which contain equal numbers of 0 ans 1 ;
 
